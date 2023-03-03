@@ -1,0 +1,34 @@
+body {
+  background: #f8edeb;
+}
+
+.calc_parent {
+  width: 22rem;
+  height: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.num-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.num-btn {
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 20rem;
+  top: 27%;
+  font-size: 2rem;
+  text-align: right;
+}
