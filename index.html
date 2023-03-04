@@ -22,166 +22,166 @@
 
     <title>Lesson 3</title>
   </head>
-  <body class="pt-4 px-5">
-    <header class="">
+  <body>
+    <header class="p-4">
       <h4 class="fw-bold">Art Bernales.</h4>
     </header>
 
-    <div
-      class="rounded-4 d-flex justify-content-center align-items-center calc_parent position-absolute top-50 start-50 translate-middle position-relative"
-      style="background-color: #fff"
-    >
-      <form id="calculator">
-        <input
-          class="position-absolute start-50 translate-middle"
-          type="text"
-          id="calc_field"
-          placeholder="0"
-        />
-        <div
-          class="num-box position-absolute bottom-0 start-50 translate-middle-x py-3 border-top"
-        >
+    <div class="d-flex justify-content-center" style="margin-top: 2rem">
+      <div
+        class="rounded-4 calc_parent position-relative"
+        style="background-color: #fff"
+      >
+        <form id="calculator">
+          <input
+            class="position-absolute start-50 translate-middle px-3"
+            type="text"
+            id="calc_field"
+            placeholder="0"
+          />
           <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="ac"
-            onclick="calculator.calc_field.value = ''"
+            class="num-box position-absolute bottom-0 start-50 translate-middle-x py-3 border-top"
           >
-            AC
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="ac"
+              onclick="calculator.calc_field.value = ''"
+            >
+              AC
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              id="decrease"
+              value="--"
+              onclick="back_space()"
+            >
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="%"
+              onclick="calculator.calc_field.value += '%'"
+            >
+              %
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="/"
+              onclick="calculator.calc_field.value += '/'"
+            >
+              /
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="1"
+              onclick="calculator.calc_field.value += 1"
+            >
+              1
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="2"
+              onclick="calculator.calc_field.value += 2"
+            >
+              2
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="3"
+              onclick="calculator.calc_field.value += 3"
+            >
+              3
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="*"
+              onclick="calculator.calc_field.value += '*'"
+            >
+              x
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="4"
+              onclick="calculator.calc_field.value += 4"
+            >
+              4
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="5"
+              onclick="calculator.calc_field.value += 5"
+            >
+              5
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="6"
+              onclick="calculator.calc_field.value += 6"
+            >
+              6
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="-"
+              onclick="calculator.calc_field.value += '-'"
+            >
+              -
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="7"
+              onclick="calculator.calc_field.value += 7"
+            >
+              7
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="8"
+              onclick="calculator.calc_field.value += 8"
+            >
+              8
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="9"
+              onclick="calculator.calc_field.value += 9"
+            >
+              9
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="+"
+              onclick="calculator.calc_field.value += '+'"
+            >
+              +
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="0"
+              onclick="calculator.calc_field.value += 0"
+            >
+              0
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold"
+              value="."
+              onclick="calculator.calc_field.value += '.'"
+            >
+              .
+            </div>
+            <div
+              class="num-btn fs-4 btn btn-light border-0 fw-semibold position-absolute end-0 equal rounded-5"
+              value="="
+              onclick="calculator.calc_field.value = eval(calculator.calc_field.value)"
+            >
+              =
+            </div>
           </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            id="decrease"
-            value="--"
-            onclick="back_space()"
-          >
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="%"
-            onclick="calculator.calc_field.value += '%'"
-          >
-            %
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="/"
-            onclick="calculator.calc_field.value += '/'"
-          >
-            /
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="1"
-            onclick="calculator.calc_field.value += 1"
-          >
-            1
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="2"
-            onclick="calculator.calc_field.value += 2"
-          >
-            2
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="3"
-            onclick="calculator.calc_field.value += 3"
-          >
-            3
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="*"
-            onclick="calculator.calc_field.value += '*'"
-          >
-            x
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="4"
-            onclick="calculator.calc_field.value += 4"
-          >
-            4
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="5"
-            onclick="calculator.calc_field.value += 5"
-          >
-            5
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="6"
-            onclick="calculator.calc_field.value += 6"
-          >
-            6
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="-"
-            onclick="calculator.calc_field.value += '-'"
-          >
-            -
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="7"
-            onclick="calculator.calc_field.value += 7"
-          >
-            7
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="8"
-            onclick="calculator.calc_field.value += 8"
-          >
-            8
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="9"
-            onclick="calculator.calc_field.value += 9"
-          >
-            9
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="+"
-            onclick="calculator.calc_field.value += '+'"
-          >
-            +
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="0"
-            onclick="calculator.calc_field.value += 0"
-          >
-            0
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="."
-            onclick="calculator.calc_field.value += '.'"
-          >
-            .
-          </div>
-          <div
-            class="num-btn fs-4 btn btn-light border-0 fw-semibold"
-            value="="
-            onclick="calculator.calc_field.value = eval(calculator.calc_field.value)"
-          >
-            =
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
 
-    <footer
-      class="bg-light border-top position-absolute bottom-0 start-50 translate-middle-x w-100 p-3"
-    >
+    <footer class="bg-light border-top w-100 p-3" style="margin-top: 8rem">
       <h6 class="text-center text-dark">Kodego WD52P</h6>
       <h6 class="text-center text-dark">
         Calculator - Art Alfred Bernales

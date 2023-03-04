@@ -1,17 +1,18 @@
 body {
   background: #f8edeb;
+  height: auto;
 }
 
 .calc_parent {
-  width: 22rem;
-  height: 40rem;
+  width: 20rem;
+  height: 38rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .num-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .num-btn {
@@ -31,4 +32,9 @@ input {
   top: 27%;
   font-size: 2rem;
   text-align: right;
+}
+
+.equal {
+  width: 9.2rem;
+  bottom: 1rem;
 }
